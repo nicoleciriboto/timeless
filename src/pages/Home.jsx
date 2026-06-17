@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { MessageCircle, Phone, ArrowUpRight, CheckCircle } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { ProjectData } from "../data/ProjectData";
 import heroBg from "../assets/img4.jpeg";
 
@@ -48,6 +49,14 @@ export default function Home({ onContactClick }) {
 
   return (
     <div className="bg-neutral-950 text-white min-h-screen">
+      <Helmet>
+        <title>Timeless Motion Production | Zimbabwe Photography &amp; Video Studio</title>
+        <meta name="description" content="Book a professional photographer or videographer in Zimbabwe. Timeless Motion Production delivers wedding photography, brand films, drone footage, livestreaming and social content across Zimbabwe and Southern Africa." />
+        <link rel="canonical" href="https://www.timelessmotionproduction.co.zw/" />
+        <meta property="og:title" content="Timeless Motion Production | Zimbabwe Photography &amp; Video Studio" />
+        <meta property="og:description" content="Book a professional photographer or videographer in Zimbabwe. Wedding photography, drone, brand films, livestream and social content." />
+        <meta property="og:url" content="https://www.timelessmotionproduction.co.zw/" />
+      </Helmet>
       {/* HERO SECTION */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden px-6">
         {/* Background Photo */}

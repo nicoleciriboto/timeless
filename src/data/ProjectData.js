@@ -39,18 +39,7 @@ export const ProjectData = [
     title: "Creative Shoots",
     category: "Amazing creative shoots with a twist.",
     image: img3,
-    year: "2023",
+    year: "2026",
     description: "Amazing creative shoots with a twist."
   },
-  {
-    id: "modern-silhouettes",
-    slug: "modern-silhouettes",
-    title: "Modern Silhouettes",
-    category: "Editorial Portraiture",
-    image: img4,
-    year: "2022",
-    client: "Studio 8",
-    role: "Lead Creative & Lighting",
-    description: "A striking visual series focusing on strong studio shapes, high-contrast shadows, and raw editorial presentation for an upscale African fashion collection."
-  }
 ];

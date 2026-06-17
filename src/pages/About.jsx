@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Film, Calendar, Compass, MessageSquare } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import img5 from "../assets/img5.jpeg";
 import DroneSeries2 from "../assets/DroneSeries2.jpeg";
 import img3 from "../assets/img3.jpeg";
@@ -76,6 +77,14 @@ export default function About({ onContactClick }) {
 
   return (
     <div className="bg-neutral-950 text-white min-h-screen pt-24">
+      <Helmet>
+        <title>About Us | Timeless Motion Production Zimbabwe</title>
+        <meta name="description" content="Learn about Timeless Motion Production — Zimbabwe's full-service creative studio. Cinematic video, photography, drone and digital storytelling for lifestyle, corporate and event brands." />
+        <link rel="canonical" href="https://www.timelessmotionproduction.co.zw/about" />
+        <meta property="og:title" content="About Us | Timeless Motion Production Zimbabwe" />
+        <meta property="og:description" content="Zimbabwe's full-service creative studio delivering cinematic video, photography, drone and digital storytelling for lifestyle, corporate and event brands." />
+        <meta property="og:url" content="https://www.timelessmotionproduction.co.zw/about" />
+      </Helmet>
       {/* INTRO HERO */}
       <section className="py-24 px-6 max-w-6xl mx-auto">
         <div className="flex items-center gap-4 mb-8">

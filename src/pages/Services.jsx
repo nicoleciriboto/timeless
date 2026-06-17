@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Camera, Video, Compass, Radio, Smartphone, Layers, CheckCircle2 } from "lucide-react";
 
 export default function Services({ onContactClick }) {
@@ -66,6 +67,14 @@ export default function Services({ onContactClick }) {
 
   return (
     <div className="bg-neutral-950 text-white min-h-screen pt-24">
+      <Helmet>
+        <title>Our Services | Photography, Video &amp; Drone in Zimbabwe | Timeless Motion</title>
+        <meta name="description" content="Professional photography, videography, drone filming, livestreaming, social media content and web services in Zimbabwe. Book Timeless Motion Production for your next project." />
+        <link rel="canonical" href="https://www.timelessmotionproduction.co.zw/services" />
+        <meta property="og:title" content="Our Services | Photography, Video &amp; Drone in Zimbabwe" />
+        <meta property="og:description" content="Photography, videography, drone, livestreaming and social content services in Zimbabwe. Book Timeless Motion Production today." />
+        <meta property="og:url" content="https://www.timelessmotionproduction.co.zw/services" />
+      </Helmet>
       {/* HEADER */}
       <section className="py-24 px-6 text-center max-w-4xl mx-auto space-y-8">
         <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-white/5 bg-white/[0.02] text-xs font-mono tracking-widest uppercase text-neutral-500">
